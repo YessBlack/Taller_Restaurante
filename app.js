@@ -160,4 +160,8 @@ const platosPorCategoria = (menu, categoria) => {
   return menu.filter(item => item.categoria === categoria)
 }
 
-platosPorCategoria(menu, 'comidas_rapidas')
+const comidasRapidas = platosPorCategoria(menu, 'comidas_rapidas')
+console.log('Comidas Rapidas ', comidasRapidas)
+
+const bebidas = platosPorCategoria(menu, 'bebidas')
+console.log('Bebidas ', bebidas)
