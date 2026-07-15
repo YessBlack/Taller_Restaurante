@@ -11,37 +11,37 @@ const menu = [
     nombre: 'Salchipapa Sencilla',
     precio: 15000,
     categoria: 'comidas_rapidas',
-    estaDisponible: true
+    disponible: true
   },
   {
     nombre: 'Picada Sencilla',
     precio: 30000,
     categoria: 'comidas_rapidas',
-    estaDisponible: true
+    disponible: true
   },
   {
     nombre: 'Almuerzo Ejecutivo',
     precio: 40000,
     categoria: 'almuerzos',
-    estaDisponible: true
+    disponible: true
   },
   {
     nombre: 'Hamburguesa doble Carne',
     precio: 25000,
     categoria: 'comidas_rapidas',
-    estaDisponible: true
+    disponible: true
   },
   {
     nombre: 'Coca Cola 1.5L',
     precio: 6000,
     categoria: 'bebidas',
-    estaDisponible: false
+    disponible: false
   },
   {
     nombre: 'Jugo Natural Naranja',
     precio: 5000,
     categoria: 'bebidas',
-    estaDisponible: true
+    disponible: true
   }
 ]
 
@@ -64,7 +64,7 @@ const soloDisponibles = (menu) => {
   const disponbiles = []
 
   for (const item of menu) {
-    if (item.estaDisponible) {
+    if (item.disponible) {
       disponbiles.push(item)
     }
   }
